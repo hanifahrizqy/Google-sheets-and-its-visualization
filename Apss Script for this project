@@ -1,0 +1,57 @@
+function Save() {
+var Sheet = SpreadsheetApp.getActiveSpreadsheet();
+var shtinput = Sheet.getSheetByName('Input Data');
+var shtdb = Sheet.getSheetByName('Database');
+
+var tanggalrqs = shtinput.getRange('C3').getValue();
+var name = shtinput.getRange('C4').getValue();
+var provinsi = shtinput.getRange('C5').getValue();
+var agency = shtinput.getRange('C6').getValue();
+var service = shtinput.getRange('C7').getValue();
+var request = shtinput.getRange('C8').getValue();
+
+var baris = shtdb.getRange('G1').getValue();
+baris += 1;
+var rangeisi = shtdb.getRange('A' + baris + ':F'+ baris);
+rangeisi.setValues([[tanggalrqs,name,provinsi,agency,service,request]]);
+Clear();
+}
+function Clear(){
+  	var Sheet = SpreadsheetApp.getActiveSpreadsheet();
+    var shtinput = Sheet.getSheetByName('Input Data');
+    shtinput.getRange('C3').clearContent();
+    shtinput.getRange('C4').clearContent();
+    shtinput.getRange('C5').clearContent();
+    shtinput.getRange('C6').clearContent();
+    shtinput.getRange('C7').clearContent();
+    shtinput.getRange('C8').clearContent();
+}
+
+function SaveProgress() {
+var Sheet = SpreadsheetApp.getActiveSpreadsheet();
+var shtpgs = Sheet.getSheetByName('Progress');
+var shtpgscompany = Sheet.getSheetByName('Progress Company');
+
+var nama = shtpgs.getRange('C2').getValue();
+var tanggal = shtpgs.getRange('E2').getValue();
+var stage = shtpgs.getRange('E3').getValue();
+var status = shtpgs.getRange('E4').getValue();
+var harga = shtpgs.getRange('E5').getValue();
+var keterangan = shtpgs.getRange('E6').getValue();
+
+var baris2 = shtpgscompany.getRange('H1').getValue();
+baris2 += 1;
+var rangeisi2 = shtpgscompany.getRange('A' + baris2 + ':F'+ baris2);
+rangeisi2.setValues([[nama,tanggal,stage,status,harga,keterangan]]);
+Clear2();
+}
+function Clear2(){
+  	var Sheet = SpreadsheetApp.getActiveSpreadsheet();
+    var shtprogress = Sheet.getSheetByName('Progress');
+    shtprogress.getRange('C2').clearContent();
+    shtprogress.getRange('E2').clearContent();
+    shtprogress.getRange('E3').clearContent();
+    shtprogress.getRange('E4').clearContent();
+    shtprogress.getRange('E5').clearContent();
+    shtprogress.getRange('E6').clearContent();
+}
