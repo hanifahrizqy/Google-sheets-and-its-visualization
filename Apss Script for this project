@@ -1,3 +1,4 @@
+#for button in input data sheet
 function Save() {
 var Sheet = SpreadsheetApp.getActiveSpreadsheet();
 var shtinput = Sheet.getSheetByName('Input Data');
@@ -27,6 +28,7 @@ function Clear(){
     shtinput.getRange('C8').clearContent();
 }
 
+#for button in progress sheet
 function SaveProgress() {
 var Sheet = SpreadsheetApp.getActiveSpreadsheet();
 var shtpgs = Sheet.getSheetByName('Progress');
