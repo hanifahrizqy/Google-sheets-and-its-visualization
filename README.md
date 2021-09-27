@@ -8,4 +8,3 @@ After you all saw and filled in the google sheet. Go cek the Data studio for the
 Here's link:
 1. Google Sheets : https://docs.google.com/spreadsheets/d/1eiVW6S-WXQ3LSYlo8RZhEkTCojd-vARMJiC19nSwdf0/edit?usp=sharing
 2. Data Studio : https://datastudio.google.com/reporting/96487808-ed84-4966-bfda-d66e416e8395
-3. Apss Script : 1wYWJ-AFJVaSVpwNK7k5PoznZDhsexb8NrI_viBdwnXh3pqtSeK6Q6zVK
