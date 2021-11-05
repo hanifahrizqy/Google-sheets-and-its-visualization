@@ -1,3 +1,3 @@
-# Google-sheets-and-visualization
+# Database-and-visualization
 
 This script for VBA in google sheets in My portfolio.
